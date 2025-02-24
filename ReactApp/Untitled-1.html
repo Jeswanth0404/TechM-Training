@@ -1,0 +1,57 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2,h4,p{
+            color: rgb(92, 64, 45);
+            font-size: 20px;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            background-image: url(https://images.pexels.com/photos/1042423/pexels-photo-1042423.jpeg?cs=srgb&dl=pexels-kasperphotography-1042423.jpg&fm=jpg);
+            background-size: cover;
+            background-position: top;
+            text-align: center;
+            padding: 20px;
+        }
+        #root1,#root2,#root3{
+            margin: 20px auto;
+            padding: 5px;
+            width: 40%;
+            background-color: rgb(38, 160, 36);
+            border-radius: 40px;
+            box-shadow: black;
+        }
+    </style>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+</head>
+<body>
+    <div id="root1"></div>
+    <div id="root2"></div>
+    <div id="root3"></div>
+   
+    <script type="text/jsx">
+        let rt1 = document.getElementById("root1");
+
+        ReactDOM.render(<h2>Check it</h2>,rt1);
+    </script>
+<script type="text/jsx">
+        let rt2 = document.getElementById("root2");
+
+        ReactDOM.render(<h4>React with JSX!!</h4>,rt2);
+    </script>
+    <script type="text/jsx">
+        let rt3 = document.getElementById("root3");
+
+        ReactDOM.render(<p>Thankyou.Visit Again!!</p>,rt3);
+    </script>
+</body>
+</html>

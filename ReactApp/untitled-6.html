@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics for Training</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/jsx">
+        let Training = () => (
+            <div>
+                <h1>Topics for Training</h1>
+                <div>
+                    <h2>Java</h2>
+                    <p>Java is a high-level, class-based, object-oriented programming language used for building scalable applications.</p>
+                </div>
+                <div>
+                    <h2>JavaScript</h2>
+                    <p>JavaScript is a lightweight, interpreted programming language used to create dynamic web pages.</p>
+                </div>
+                <div>
+                    <h2>React</h2>
+                    <p>React is a JavaScript library for building user interfaces with a component-based architecture.</p>
+                </div>
+                <div>
+                    <h2>Angular</h2>
+                    <p>Angular is a TypeScript-based framework for building single-page client applications.</p>
+                </div>
+            </div>
+        );
+        
+        ReactDOM.render(<Training />, document.getElementById("root"));
+    </script>
+</body>
+</html>

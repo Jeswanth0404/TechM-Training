@@ -1,0 +1,37 @@
+// Create the Student object
+let student = {
+    name: "Alice",
+    age: 21,
+    course: "Computer Science",
+    details: function() {
+        console.log(`Name: ${this.name}, Age: ${this.age}, Course: ${this.course}`);
+    }
+};
+
+// Access properties and method
+student.details();
+
+// Add nested object and new methods
+student.address = {
+    city: "New York",
+    zip: "10001"
+};
+student.greet = function() {
+    console.log("Hello, welcome!");
+};
+student.updateAge = function(newAge) {
+    this.age = newAge;
+    console.log(`Updated Age: ${this.age}`);
+};
+
+// Access everything
+console.log(student.address.city);
+student.greet();
+student.updateAge(22);
+
+// Remove a property and function
+delete student.course;
+delete student.greet;
+
+// Display updated object
+console.log(student);

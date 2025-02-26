@@ -1,0 +1,78 @@
+
+BY USING IF
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Division(props) {
+  const isNum = props.num;
+  if (isNum%13==0) {
+    return (
+        <div>
+            <h1>The Number {isNum} is Divisible by 13</h1>
+        </div>);
+  }
+  return  (
+        <div>
+            <h1>The Number {isNum} is not Divisible by 13</h1>
+        </div>);
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Division num="9033" />);
+
+-----------------------------------------------------------------
+
+
+BY USING TERNARY
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Division() {
+	return <h1>The Number is Divisible by 13 </h1>;
+}
+
+function Not() {
+	return <h1>The Number is not Divisible by 13</h1>;
+}
+function Check(props) {
+  const isNum = props.num;
+ return (
+		<>
+			{ isNum%13==0 ? <Division/> : <Not/> }
+		</>
+	);
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Check num="13" />);
+
+-------------------------------------------------------------------
+
+BY USING LOGICAL &&
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Division(props) {
+  const isNum = props.isNum;
+  return (
+    <>
+      { isNum%13 == 0 &&
+        <h2>
+          The Number {isNum} is Divisible by 13
+        </h2>
+      }
+       { isNum%13 != 0 &&
+        <h2>
+           The Number {isNum} is not Divisible by 13
+        </h2>
+      }
+    </>
+  );
+}
+const isNum = 234
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Division isNum={isNum} />);

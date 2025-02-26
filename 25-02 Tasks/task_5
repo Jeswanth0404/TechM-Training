@@ -1,0 +1,54 @@
+By using if;
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+const arr=["rose","jasmine","lotus"]
+function CheckArray(props){
+    const str=props.string;
+    if(arr.includes(str)){
+        return <h1>It is a flower</h1>
+    }
+    {
+        return <h1>It is not a flower</h1>
+    }
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<CheckArray string="lotus" />); 
+--------------------------------------------------------------------
+By using Logical &&;
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+const arr=["rose","jasmine","lotus"]
+function CheckArray(props){
+    const str=props.string;
+    return(
+        <>
+            {arr.includes(str)&&
+            <h1>It is a flower</h1>}
+            {!arr.includes(str)&&
+            <h1>It is not a flower</h1>}
+        </>
+    )
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<CheckArray string="lotus" />); 
+---------------------------------------------------------------------
+By using ternary;
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+const arr=["rose","jasmine","lotus"]
+function Yes(){
+    return <h1>It is a flower</h1>
+}
+function No(){
+    return <h1>It is not a flower</h1>
+}
+function CheckArray(props){
+    const str=props.string;
+    return(
+        <>
+            {arr.includes(str)? <Yes/>:<No/>}
+        </>
+    )
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<CheckArray string="lotus" />); 

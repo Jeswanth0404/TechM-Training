@@ -1,0 +1,78 @@
+BY USING TERNARY
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Divisible() {
+    return <h1>The Number of elements in the array is multiple of 3</h1> 
+}
+function Not() {
+    return <h1>The Number of elements in the array is not multiple of 3</h1> 
+}
+function Length(props) {
+    const isArr = props.array;
+    return(
+        <>
+            {isArr.length%3 == 0 ? <Divisible/> : <Not/>}
+        </>
+    )
+}
+const isArr = [23,43,22]
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Length array={isArr}/>);
+
+
+-------------------------------------------------------------------
+
+BY USING LOGICAL &&
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Multiple(props) {
+    const isArr = props.array
+    return (
+        <>
+        {isArr.length%3 == 0 &&
+        <h1>It is multiple of 3</h1>
+        }
+        {isArr.length%3 != 0 &&
+        <h1>It is not multiple of 3</h1>
+        }
+        </>
+    )
+}
+const isArr=[32,44,55,44,33]
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Multiple array={isArr}/>);
+
+
+-----------------------------------------------------------------------
+
+
+BY USING IF 
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Multiple(props) {
+    const isArr = props.array
+    if (isArr.length%3 == 0) {
+        return(
+            <div>
+            <h1>It is multiple of 3</h1>
+            </div>
+        )
+    }
+    return(
+        <div>
+            <h1>It is not multiple of 3</h1>
+            </div>
+    )
+}
+const isArr = [23,34,45,56,67,78]
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Multiple array={isArr}/>)
+

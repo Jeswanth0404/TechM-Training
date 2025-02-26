@@ -1,0 +1,74 @@
+BY USING IF
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Length(props) {
+  const isString = props.string;
+  if (isString.length%2==0) {
+    return (
+        <div>
+            <h1>The Length of {isString} is Even</h1>
+        </div>);
+  }
+  return  (
+        <div>
+            <h1>The Length of {isString} is Odd</h1>
+        </div>);
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Length string="Hii" />);
+
+---------------------------------------------------------------------
+
+BY USING TERNARY
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Even() {
+	return <h1>The String is Even </h1>;
+}
+
+function Odd() {
+	return <h1>The String is Odd</h1>;
+}
+function Check(props) {
+  const isString = props.string;
+ return (
+		<>
+			{ isString.length%2==0 ? <Even/> : <Odd/> }
+		</>
+	);
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Check string="jessy" />);
+
+
+----------------------------------------------------------------------
+
+
+BY USING LOGICAL &&
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function EvenOrOdd(props) {
+    const isString=props.string
+    return (
+        <>
+        {isString.length%2 == 0 && 
+            <h1>The String {isString} is Even</h1>
+        }
+        {isString.length%2 != 0 &&
+         <h1>The String {isString} is Odd</h1>   
+        }
+        </>
+    )
+}
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<EvenOrOdd string="Jeswanth"/>);
+    

@@ -1,0 +1,69 @@
+BY USING IF 
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function CheckString(props) {
+    const isString = props.string
+    const vowel = ['a','e','i','o','u']
+    for (const i of isString) {
+        if (vowel.includes(i)) {
+            return <h1>The String has vowels</h1>
+        }
+    }
+    return(
+            <h1>The string doesn't have vowels</h1>
+    )
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<CheckString string="Hi"/>)
+
+------------------------------------------------------------------
+
+By using Logical &&;
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+function CheckArray(props) {
+    const str = props.array
+    const A=['a','i','o','e','u']
+    let hasVowel=false;
+   for(const i of str){
+       A.includes(i) && (hasVowel=true);
+   }
+    return(
+        <>
+            {hasVowel && <h1>The string has a vowel</h1>}
+            {!hasVowel &&<h1>The string does not have a vowel</h1>}
+        </>
+    );
+}
+    
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<CheckArray array="fghi" />);
+-------------------------------------------------------------------------
+By using Ternary;
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+function Yes(){
+    return <h1>The given string has a vowel</h1>
+}
+function No(){
+    return <h1>The given string does not has a vowel</h1>
+}
+function CheckArray(props) {
+    const str = props.array
+    const A=['a','i','o','e','u']
+    let hasVowel=false;
+   for(const i of str){
+       A.includes(i) && (hasVowel=true);
+   }
+    return(
+        <>
+            {hasVowel?<Yes/>:<No/>}
+        </>
+    );
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<CheckArray array="fghi" />); 

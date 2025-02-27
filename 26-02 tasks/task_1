@@ -1,0 +1,13 @@
+import React, { useState } from "react";
+import ReactDOM from 'react-dom/client';
+
+function Div(props) {
+    const isNum = props.num
+    if(isNum%16==0){
+        return <h1>The Number {isNum} is divisible by 16</h1>
+    }
+    else 
+        return <h1>The Number {isNum} is not divisible by 16</h1>
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Div num="32"/>)

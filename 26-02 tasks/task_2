@@ -1,0 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function CheckCards({ hasAadhar, hasPAN }) {
+    return (
+        <>
+            <h1>User's Card Details</h1>
+            {hasAadhar && <h2>User has an Aadhar Card</h2>}
+            {hasPAN && <h2>User has a PAN Card</h2>}
+            {(hasAadhar || hasPAN) && <h2>User is eligible for the government offer</h2>}
+            {!hasAadhar && !hasPAN && <h2>User is NOT eligible for the government offer</h2>}
+        </>
+    );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<CheckCards hasAadhar={true} hasPAN={false} />);

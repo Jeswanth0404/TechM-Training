@@ -1,0 +1,53 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "Title": "Devara",
+      "Year": "2024",
+      "Poster": "https://moviegalleri.net/wp-content/gallery/devara/devara-hd-images-1fab0d3.jpg"
+    },
+    {
+      "id": 2,
+      "Title": "Salaar",
+      "Year": "2023",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNTU0ZjYxOWItOWViMC00YWVlLWJlMGUtZjc1YWU0NTlhY2ZhXkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+      "id": 3,
+      "Title": "Kalki 2898",
+      "Year": "2024",
+      "Poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQmSW17wrGcXbADd0fd4IB_2ja-RxYelcmQ&s"
+    },
+    {
+        "id": 4,
+        "Title": "RRR",
+        "Year": "2022",
+        "Poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBGSJ3R0-Cqwyx8iFNwyP5q0eI-FwGon1iQ&s"
+      },
+      {
+        "id": 5,
+        "Title": "Pushpa-2",
+        "Year": "2024",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNWU1ZWFhNGQtZDhlZC00ZWFlLTlmNmEtN2VmYmZiN2Y5ZmQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        "id": 6,
+        "Title": "Lucky Bhasker",
+        "Year": "2024",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg"
+      },
+      {
+        "id": 7,
+        "Title": "GunturKaram",
+        "Year": "2024",
+        "Poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5RfKjAz9LUtMN5v8-WqRPba7ikn5cAMvmw&s"
+      },
+      
+    {
+      "id": "dfc4",
+      "Title": "bahubali 2",
+      "Year": "2017",
+      "Poster": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwAZddfdsmgj84MRQyRDfNxl-swkZRxt2IQX3gnLkzHl3EEzyD3dduWibKdNCCqOTyaL3WIw"
+    }
+  ]
+}

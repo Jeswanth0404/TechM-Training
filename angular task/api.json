@@ -1,0 +1,143 @@
+{
+    "services": [
+    {
+      "id": 1,
+      "title": "Brand Identity & Strategy",
+      "description": "We create compelling brand identities that make a lasting impact. From defining your market positioning to designing logos, graphics, and advertising materials, we ensure your brand stands out and connects with your audience.",
+      "image": "branding.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Content & Inbound Marketing",
+      "description": "Our expert team crafts high-quality content and inbound marketing strategies that attract, engage, and convert your target audience. We develop tailored content that enhances your brand visibility and drives customer engagement.",
+      "image": "inbound.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Video Production & Webinars",
+      "description": "From corporate films and promotional videos to live-streamed events and webinars, we bring your ideas to life with engaging visuals and soundtracks. Our team ensures your brand’s message reaches the right audience effectively.",
+      "image": "films.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Digital Marketing Solutions",
+      "description": "Boost your online presence with our expert digital marketing services, including social media management, PPC advertising, SEO optimization, and Google Ads. We create tailored strategies to help you grow and engage your audience effectively.",
+      "image": "digital.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Web Design & E-Commerce",
+      "description": "We design and develop user-friendly, high-performance websites and e-commerce platforms. Whether you need a custom-built CMS or a seamless shopping experience, we ensure your online presence is visually appealing and functional.",
+      "image": "ecommerce.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Market Research & Insights",
+      "description": "Understanding your audience is key to success. We provide in-depth market research, competitor analysis, and customer insights to help you make informed decisions and create data-driven marketing strategies.",
+      "image": "market.jpg"
+    }
+]
+,
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project 1",
+          "description": "Project 1 description",
+          "status": "active",
+          "startDate": "2021-01-01",
+          "endDate": "2021-01-31",
+          "teamSize": 10,
+          "image": "project1.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Project 2",
+          "description": "Project 2 description",
+          "status": "completed",
+          "startDate": "2021-02-01",
+          "endDate": "2021-02-28",
+          "teamSize": 8,
+          "image": "project2.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Project 3",
+          "description": "Project 3 description",
+          "status": "active",
+          "startDate": "2021-03-01",
+          "endDate": "2021-03-31",
+          "teamSize": 12,
+          "image": "project3.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Project 4",
+          "description": "Project 4 description",
+          "status": "on hold",
+          "startDate": "2021-04-01",
+          "endDate": "2021-04-30",
+          "teamSize": 15,
+          "image": "project4.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Project 5",
+          "description": "Project 5 description",
+          "status": "active",
+          "startDate": "2021-05-01",
+          "endDate": "2021-05-31",
+          "teamSize": 9,
+          "image": "project5.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Project 6",
+          "description": "Project 6 description",
+          "status": "completed",
+          "startDate": "2021-06-01",
+          "endDate": "2021-06-30",
+          "teamSize": 11,
+          "image": "project6.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Project 7",
+          "description": "Project 7 description",
+          "status": "active",
+          "startDate": "2021-07-01",
+          "endDate": "2021-07-31",
+          "teamSize": 14,
+          "image": "project7.jpg"
+        },
+        {
+          "id": 8,
+          "name": "Project 8",
+          "description": "Project 8 description",
+          "status": "on hold",
+          "startDate": "2021-08-01",
+          "endDate": "2021-08-31",
+          "teamSize": 10,
+          "image": "project8.jpg"
+        },
+        {
+          "id": 9,
+          "name": "Project 9",
+          "description": "Project 9 description",
+          "status": "active",
+          "startDate": "2021-09-01",
+          "endDate": "2021-09-30",
+          "teamSize": 13,
+          "image": "project9.jpg"
+        },
+        {
+          "id": 10,
+          "name": "Project 10",
+          "description": "Project 10 description",
+          "status": "completed",
+          "startDate": "2021-10-01",
+          "endDate": "2021-10-31",
+          "teamSize": 7,
+          "image": "project10.jpg"
+        }
+        ]
+    }
